@@ -1,7 +1,7 @@
-﻿using DMSkin.Core.MVVM;
-using MainUI.Api;
+﻿using MainUI.Api;
 using MainUI.Model;
 using System.Windows.Controls;
+using UkuleleSkin.MVVM;
 
 namespace MainUI.ViewModel
 {

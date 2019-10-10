@@ -19,7 +19,7 @@ namespace MainUI.Controls
         /// <summary>
         /// 图标
         /// </summary>
-        [Description("图标"), Category("DMSkin")]
+        [Description("图标"), Category("Skin")]
         public Geometry Icon
         {
             get { return (Geometry)GetValue(IconProperty); }

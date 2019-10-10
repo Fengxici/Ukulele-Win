@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:dmcontrols="clr-namespace:DMSkin.WPF.Controls;assembly=DMSkin.WPF"
+             xmlns:skincontrols="clr-namespace:UkuleleSkin.Controls;assembly=UkuleleSkin"
              xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms" 
              mc:Ignorable="d" d:DesignHeight="450"  d:DesignWidth="800" Loaded="UserControl_Loaded"             >
     <Grid>
@@ -30,14 +30,14 @@
                         <ComboBoxItem Content="搜狗"  VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center" />
                         <ComboBoxItem Content="360"  VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center" />
                     </ComboBox>
-                    <dmcontrols:DMTextBox
+                    <skincontrols:SkinTextBox
                         Grid.Column="1"
                             BorderThickness="1"
                             CaretBrush="Black"
                             Foreground="Black"
                             Hint="搜索或输入网址"
                             HintColor="#C77373" />
-                    <dmcontrols:DMButton
+                    <skincontrols:SkinButton
                             Grid.Column="2"
                             Background="{StaticResource ThemeColor3}"
                             BorderThickness="0">
@@ -47,7 +47,7 @@
                             Data="{StaticResource Icon_Serach}"
                             Fill="White"
                             Stretch="Fill" />
-                    </dmcontrols:DMButton>
+                    </skincontrols:SkinButton>
                 </Grid>
             </Border>
             <ProgressBar Grid.Row="1" x:Name="loading_progress" Maximum="100" Value="0" />

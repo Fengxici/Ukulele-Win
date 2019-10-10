@@ -34,12 +34,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DMSkin.Core, Version=2.5.1.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DMSkin.Core.2.5.1.1\lib\net40\DMSkin.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DMSkin.WPF, Version=2.5.1.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DMSkin.WPF.2.5.1.1\lib\net40\DMSkin.WPF.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="MiniblinkNet, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MiniblinkNet.18.8.20.2\lib\MiniblinkNet.dll</HintPath>
@@ -97,7 +91,6 @@
     </Compile>
     <Compile Include="Controls\IconButton.cs" />
     <Compile Include="Controls\ImageRadioButton.cs" />
-    <Compile Include="Converters\Enum2BooleanConverter.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -176,7 +169,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\SkinDesign\SkinDesign.csproj">
+      <Project>{1b81e7ae-f0de-45d7-a68b-008fcfac22f1}</Project>
+      <Name>SkinDesign</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UkuleleSkin\UkuleleSkin.csproj">
+      <Project>{90f27a72-646f-42b6-8173-60a5f2b9d4a0}</Project>
+      <Name>UkuleleSkin</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Image\Logo\head.jpg" />
     <Resource Include="Resources\Image\Logo\icon.ico" />

@@ -1,5 +1,4 @@
-﻿using DMSkin.WPF;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,7 +18,7 @@ namespace MainUI
     /// <summary>
     /// MainWindow.xaml 的交互逻辑
     /// </summary>
-    public partial class MainWindow : DMSkinComplexWindow
+    public partial class MainWindow
     {
         public MainWindow()
         {
